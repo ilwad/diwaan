@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Bable Demo </title>
+  </head>
+  <body>
+    <main>
+      <div id="content"></div>
+    </main>
+
+    <script scr="https://unpkg.com/babel-standalone@6.26.0/babel.js">
+
+    </script>
+
+    <script type="text/babel" data-presets="latest">
+
+    const getMessage = (name) => `Welcome to javascript, ${name}!`;
+    document.getElementById('content').textContent = getMessage("fathi");
+    
+    </script>
+  </body>
+</html>

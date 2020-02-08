@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>React Demo</title>
+    <style media="screen">
+      .messageBox {
+          border: 1px solid;
+          margin: item;
+          padding: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="content"></main>
+
+    <script src="https://unpkg.com/babel-standalone"></script>
+    <script type="text/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"> </script>
+
+    <script type="text/babel" data-presets="react">
+       
+       class NameImput extends React.Component{
+          render(){
+              return(
+                  <div> 
+                    <label>Name: <input type="text" /></label>
+                    <button>Click me! </button>
+                  </div>
+              )
+          } 
+       }
+
+       class MessageBox extends React.Component{
+        render(){
+            return(
+                <div className=""> 
+                   This is the message
+                </div>
+            )
+        } 
+
+       }
+
+        ReactDOM.render(<NameImput />, document.getElementById('content'));
+    </script>
+
+  </body>
+</html>
